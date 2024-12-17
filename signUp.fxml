@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="581.0" prefWidth="465.0" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.login.HelloController">
+   <children>
+      <VBox prefHeight="728.0" prefWidth="468.0" styleClass="left-side-background2" stylesheets="@../../../../java/values/style.css">
+         <children>
+            <HBox prefHeight="141.0" prefWidth="465.0">
+               <children>
+                  <Pane prefHeight="122.0" prefWidth="463.0">
+                     <children>
+                        <ImageView fitHeight="100.0" fitWidth="104.0" layoutX="183.0" layoutY="39.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../../../../../images/sign%20up1.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                  </Pane>
+               </children>
+            </HBox>
+            <Label alignment="CENTER" prefHeight="30.0" prefWidth="200.0" styleClass="transparent" stylesheets="@../../../../java/values/style.css" text="Sign Up Account" textFill="#185168">
+               <VBox.margin>
+                  <Insets left="130.0" right="130.0" />
+               </VBox.margin>
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label prefHeight="4.0" prefWidth="388.0" text="' * ' Sign indicates must fill-up credentials" textFill="#41a31d">
+               <VBox.margin>
+                  <Insets left="40.0" right="40.0" top="30.0" />
+               </VBox.margin>
+               <font>
+                  <Font name="Microsoft Sans Serif" size="13.0" />
+               </font>
+            </Label>
+            <HBox prefHeight="30.0" prefWidth="385.0" styleClass="border" stylesheets="@../../../../java/values/style.css">
+               <VBox.margin>
+                  <Insets left="40.0" right="40.0" top="5.0" />
+               </VBox.margin>
+               <children>
+                  <Pane prefHeight="29.0" prefWidth="175.0" styleClass="right-side-border" stylesheets="@../../../../java/values/style.css">
+                     <children>
+                        <Label layoutX="7.0" layoutY="4.0" prefHeight="20.0" prefWidth="100.0" text="First Name      " textFill="#185168">
+                           <font>
+                              <Font name="Microsoft Sans Serif" size="14.0" />
+                           </font>
+                        </Label>
+                        <ImageView fitHeight="10.0" fitWidth="8.0" layoutX="79.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../../../../../images/asterisk1.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </Pane>
+                  <TextField fx:id="tfFirstName" prefHeight="31.0" prefWidth="277.0" promptText="first_name" styleClass="transparent" stylesheets="@../../../../java/values/style.css">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </TextField>
+               </children>
+            </HBox>
+            <HBox prefHeight="30.0" prefWidth="385.0" styleClass="border" stylesheets="@../../../../java/values/style.css">
+               <children>
+                  <Pane prefHeight="29.0" prefWidth="175.0" styleClass="right-side-border" stylesheets="@../../../../java/values/style.css">
+                     <children>
+                        <Label layoutX="7.0" layoutY="4.0" prefHeight="20.0" prefWidth="100.0" text="Last Name       " textFill="#185168">
+                           <font>
+                              <Font name="Microsoft Sans Serif" size="14.0" />
+                           </font>
+                        </Label>
+                        <ImageView fitHeight="10.0" fitWidth="8.0" layoutX="79.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../../../../../images/asterisk1.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </Pane>
+                  <TextField fx:id="tfLastName" prefHeight="31.0" prefWidth="277.0" promptText="last_name" styleClass="transparent" stylesheets="@../../../../java/values/style.css">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </TextField>
+               </children>
+               <VBox.margin>
+                  <Insets left="40.0" right="40.0" top="10.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox prefHeight="30.0" prefWidth="385.0" styleClass="border" stylesheets="@../../../../java/values/style.css">
+               <children>
+                  <Pane prefHeight="29.0" prefWidth="175.0" styleClass="right-side-border" stylesheets="@../../../../java/values/style.css">
+                     <children>
+                        <Label layoutX="7.0" layoutY="4.0" prefHeight="20.0" prefWidth="100.0" text="Kuet E-mail     " textFill="#185168">
+                           <font>
+                              <Font name="Microsoft Sans Serif" size="14.0" />
+                           </font>
+                        </Label>
+                        <ImageView fitHeight="10.0" fitWidth="8.0" layoutX="83.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../../../../../images/asterisk1.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </Pane>
+                  <TextField fx:id="tfKuet_email" prefHeight="31.0" prefWidth="277.0" promptText="kuet_email@stud.kuet.ac.bd" styleClass="transparent" stylesheets="@../../../../java/values/style.css">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </TextField>
+               </children>
+               <VBox.margin>
+                  <Insets left="40.0" right="40.0" top="10.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox prefHeight="30.0" prefWidth="385.0" styleClass="border" stylesheets="@../../../../java/values/style.css">
+               <children>
+                  <Pane prefHeight="29.0" prefWidth="141.0" styleClass="right-side-border" stylesheets="@../../../../java/values/style.css">
+                     <children>
+                        <Label layoutX="7.0" layoutY="4.0" prefHeight="20.0" prefWidth="100.0" text="Password" textFill="#185168">
+                           <font>
+                              <Font name="Microsoft Sans Serif" size="14.0" />
+                           </font>
+                        </Label>
+                        <ImageView fitHeight="10.0" fitWidth="8.0" layoutX="73.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../../../../../images/asterisk1.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </Pane>
+                  <Pane prefHeight="27.0" prefWidth="241.0">
+                     <children>
+                        <TextField fx:id="pfPasswordText" layoutY="1.0" prefHeight="25.0" prefWidth="242.0" styleClass="transparent" stylesheets="@../../../../java/values/style.css" />
+                        <PasswordField fx:id="pfPasswordHidden" layoutX="1.0" layoutY="-1.0" prefHeight="20.0" prefWidth="241.0" promptText="Password" styleClass="transparent" stylesheets="@../../../../java/values/style.css">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </PasswordField>
+                     </children>
+                  </Pane>
+               </children>
+               <VBox.margin>
+                  <Insets left="40.0" right="40.0" top="10.0" />
+               </VBox.margin>
+            </HBox>
+            <Pane prefHeight="17.0" prefWidth="385.0">
+               <VBox.margin>
+                  <Insets left="40.0" right="40.0" top="5.0" />
+               </VBox.margin>
+               <children>
+                  <CheckBox fx:id="chkShowPassword" mnemonicParsing="false" prefHeight="9.0" prefWidth="115.0" text="Show Password" textFill="#185168">
+                     <font>
+                        <Font name="Microsoft Sans Serif" size="12.0" />
+                     </font>
+                  </CheckBox>
+               </children>
+            </Pane>
+            <HBox prefHeight="30.0" prefWidth="372.0" styleClass="border" stylesheets="@../../../../java/values/style.css">
+               <children>
+                  <Pane prefHeight="29.0" prefWidth="177.0" styleClass="right-side-border" stylesheets="@../../../../java/values/style.css">
+                     <children>
+                        <Label layoutX="7.0" layoutY="4.0" prefHeight="20.0" prefWidth="116.0" text="Confirm Password" textFill="#185168">
+                           <font>
+                              <Font name="Microsoft Sans Serif" size="14.0" />
+                           </font>
+                        </Label>
+                        <ImageView fitHeight="10.0" fitWidth="8.0" layoutX="125.0" layoutY="3.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../../../../../images/asterisk1.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </Pane>
+                  <PasswordField fx:id="pfConfirmPassword" prefHeight="29.0" prefWidth="279.0" promptText="Confirm Password" styleClass="transparent" stylesheets="@../../../../java/values/style.css">
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </PasswordField>
+               </children>
+               <VBox.margin>
+                  <Insets left="40.0" right="40.0" top="10.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox prefHeight="30.0" prefWidth="372.0" styleClass="border" stylesheets="@../../../../java/values/style.css">
+               <children>
+                  <Pane prefHeight="27.0" prefWidth="143.0" styleClass="right-side-border" stylesheets="@../../../../java/values/style.css">
+                     <children>
+                        <Label layoutX="7.0" layoutY="4.0" prefHeight="20.0" prefWidth="116.0" text="Upload Picture" textFill="#185168">
+                           <font>
+                              <Font name="Microsoft Sans Serif" size="14.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Pane>
+                  <Button fx:id="btnUploadPicture" mnemonicParsing="false" prefHeight="27.0" prefWidth="245.0" styleClass="transparent" stylesheets="@../../../../java/values/style.css">
+                     <graphic>
+                        <ImageView fitHeight="19.0" fitWidth="53.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../../../../../images/add%20image1.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+               </children>
+               <VBox.margin>
+                  <Insets left="40.0" right="40.0" top="10.0" />
+               </VBox.margin>
+            </HBox>
+            <Label fx:id="errorMessageLabelSiguUp" alignment="CENTER" prefHeight="127.0" prefWidth="388.0" textAlignment="JUSTIFY" textFill="#e41414">
+               <VBox.margin>
+                  <Insets left="40.0" right="40.0" top="10.0" />
+               </VBox.margin>
+               <font>
+                  <Font name="Microsoft Sans Serif" size="14.0" />
+               </font>
+            </Label>
+            <Button fx:id="btnCreateAccount" mnemonicParsing="false" onMouseClicked="#handleCreateAccountClick" prefHeight="34.0" prefWidth="137.0" styleClass="left-side-background" stylesheets="@../../../../java/values/style.css" text="Create Account" textFill="WHITE">
+               <VBox.margin>
+                  <Insets left="165.0" right="165.0" top="10.0" />
+               </VBox.margin>
+               <font>
+                  <Font name="Microsoft Sans Serif" size="16.0" />
+               </font>
+            </Button>
+            <Pane prefHeight="20.0" prefWidth="468.0">
+               <VBox.margin>
+                  <Insets left="40.0" right="40.0" top="10.0" />
+               </VBox.margin>
+               <children>
+                  <Label alignment="CENTER" layoutX="78.0" prefHeight="20.0" prefWidth="174.0" text="        Already have an account?" textFill="#41a31d">
+                     <font>
+                        <Font name="Microsoft Sans Serif" size="12.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="btnLoginWhenAlreadyRegistered" layoutX="241.0" layoutY="-2.0" mnemonicParsing="false" prefHeight="23.0" prefWidth="54.0" styleClass="transparent" stylesheets="@../../../../java/values/style.css" text="Log In!" textFill="#41a31d" underline="true">
+                     <font>
+                        <Font name="Microsoft Sans Serif" size="12.0" />
+                     </font>
+                  </Button>
+               </children>
+            </Pane>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

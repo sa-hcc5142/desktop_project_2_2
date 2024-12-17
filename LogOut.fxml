@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.login.LogOut">
+   <children>
+      <HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0">
+         <children>
+            <VBox alignment="TOP_CENTER" prefHeight="400.0" prefWidth="791.0" styleClass="left-side-background" stylesheets="@../../../../java/values/style.css">
+               <children>
+                  <Label alignment="CENTER" prefHeight="55.0" prefWidth="311.0" text="Want to Log Out?" textFill="#fffffff2">
+                     <VBox.margin>
+                        <Insets top="30.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font name="Palatino Linotype Bold" size="24.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="146.0" fitWidth="205.0" pickOnBounds="true" preserveRatio="true">
+                     <VBox.margin>
+                        <Insets top="5.0" />
+                     </VBox.margin>
+                     <image>
+                        <Image url="@../../../../../../../images/log%20out.png" />
+                     </image>
+                  </ImageView>
+                  <Button fx:id="btnLogOut" mnemonicParsing="false" prefHeight="25.0" prefWidth="244.0" styleClass="custom-slider" stylesheets="@../../../../java/values/style.css" text="Log Out" textFill="#185168">
+                     <VBox.margin>
+                        <Insets left="50.0" right="50.0" top="20.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font name="Palatino Linotype Bold" size="14.0" />
+                     </font>
+                  </Button>
+                  <Label prefHeight="17.0" prefWidth="88.0" text="Delete Account?" textFill="WHITE">
+                     <font>
+                        <Font name="Microsoft Sans Serif" size="12.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets right="60.0" top="10.0" />
+                     </VBox.margin>
+                  </Label>
+                  <Label fx:id="lblDeleteAccount" text="Click here!" textFill="WHITE" underline="true">
+                     <font>
+                        <Font name="Microsoft Sans Serif" size="12.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets left="90.0" top="-17.0" />
+                     </VBox.margin>
+                  </Label>
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

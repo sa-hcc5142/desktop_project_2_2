@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="544.0" prefWidth="826.0" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.login.HelloController">
+   <children>
+      <VBox alignment="TOP_CENTER" layoutY="-0.6666666666666666" prefHeight="598.0" prefWidth="850.0" styleClass="interface3-background" stylesheets="@../../../../java/values/style.css" AnchorPane.bottomAnchor="-1.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="-4.0" AnchorPane.topAnchor="-1.0">
+         <children>
+            <ImageView fitHeight="342.0" fitWidth="503.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../../../images/WhatsApp%20Image%202024-10-14%20at%2005.35.03_ca04e328.jpg" />
+               </image>
+            </ImageView>
+            <Pane prefHeight="88.0" prefWidth="600.0">
+               <children>
+                  <Label alignment="CENTER" layoutX="309.0" layoutY="22.0" prefHeight="33.0" prefWidth="227.0" styleClass="transparent" stylesheets="@../../../../java/values/style.css" text="    Welcome To " textFill="#185168">
+                     <font>
+                        <Font name="Microsoft Sans Serif" size="24.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lblWelcomeMessage" layoutX="490.0" layoutY="64.0" prefHeight="33.0" prefWidth="246.0" styleClass="transparent" stylesheets="@../../../../java/values/style.css" textFill="#185168">
+                     <font>
+                        <Font name="Microsoft Sans Serif" size="24.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="252.0" layoutY="64.0" prefHeight="33.0" prefWidth="245.0" styleClass="transparent" stylesheets="@../../../../java/values/style.css" text="Mental Health Helper, " textFill="#185168">
+                     <font>
+                        <Font name="Microsoft Sans Serif" size="24.0" />
+                     </font>
+                  </Label>
+               </children>
+               <VBox.margin>
+                  <Insets bottom="10.0" />
+               </VBox.margin>
+            </Pane>
+            <Button fx:id="btnNext" alignment="CENTER" mnemonicParsing="false" prefHeight="33.0" prefWidth="89.0" styleClass="left-side-background" stylesheets="@../../../../java/values/style.css" text="Next" textFill="WHITE">
+               <font>
+                  <Font name="Microsoft Sans Serif" size="18.0" />
+               </font>
+               <VBox.margin>
+                  <Insets left="35.0" top="20.0" />
+               </VBox.margin>
+            </Button>
+         </children>
+      </VBox>
+   </children>
+
+</AnchorPane>

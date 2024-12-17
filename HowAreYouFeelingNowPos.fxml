@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="505.0" prefWidth="774.0" styleClass="left-side-background2" stylesheets="@../../../../java/values/style.css" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.login.HowAreYouFeelingNowPosController">
+   <children>
+      <VBox layoutX="9.0" layoutY="13.0" prefHeight="374.0" prefWidth="758.0" styleClass="cus-progress-bar" stylesheets="@../../../../java/values/style.css">
+         <children>
+            <Label prefHeight="38.0" prefWidth="789.0" text="Q : How content or joyful do you feel right now, on a scale of 1 (unhappy) to 10 (extremely happy)?" textFill="#185168">
+               <font>
+                  <Font name="Palatino Linotype Bold" size="14.0" />
+               </font>
+            </Label>
+            <Slider fx:id="slider1" blockIncrement="1.0" majorTickUnit="1.0" max="10.0" minorTickCount="0" prefHeight="61.0" prefWidth="707.0" showTickLabels="true" showTickMarks="true" snapToTicks="true" styleClass="custom-slider" stylesheets="@../../../../java/values/style.css" value="5.0" />
+            <Label prefHeight="40.0" prefWidth="788.0" text="Q : How loved or connected to others do you feel, on a scale of 1 (completely disconnected) to 10 (very connected)?" textFill="#185168">
+               <font>
+                  <Font name="Palatino Linotype Bold" size="14.0" />
+               </font>
+            </Label>
+            <Slider fx:id="slider2" blockIncrement="1.0" majorTickUnit="1.0" max="10.0" minorTickCount="0" prefHeight="61.0" prefWidth="707.0" showTickLabels="true" showTickMarks="true" snapToTicks="true" styleClass="custom-slider" stylesheets="@../../../../java/values/style.css" value="5.0" />
+            <Label prefHeight="64.0" prefWidth="802.0" text="Q : How aware or tuned into subtle emotions (like nostalgia or curiosity) are you right now, on a scale of &#10;      1 (completely unaware) to 10 (highly aware)?&#10;" textFill="#185168">
+               <font>
+                  <Font name="Palatino Linotype Bold" size="14.0" />
+               </font>
+            </Label>
+            <Slider fx:id="slider3" blockIncrement="1.0" majorTickUnit="1.0" max="10.0" minorTickCount="0" prefHeight="85.0" prefWidth="768.0" showTickLabels="true" showTickMarks="true" snapToTicks="true" styleClass="custom-slider" stylesheets="@../../../../java/values/style.css" value="5.0" />
+         </children>
+      </VBox>
+      <ProgressBar fx:id="progressBarPos" layoutX="160.0" layoutY="452.0" prefHeight="20.0" prefWidth="462.0" progress="0.0" styleClass="custom-progress-bar" stylesheets="@../../../../java/values/style.css" />
+      <Button fx:id="btnPosQues" alignment="CENTER" layoutX="353.0" layoutY="395.0" mnemonicParsing="false" onAction="#onBtnPosQuesClicked" prefHeight="32.0" prefWidth="70.0" styleClass="left-side-background" stylesheets="@../../../../java/values/style.css" text="Next" textFill="WHITE">
+         <font>
+            <Font name="Palatino Linotype Bold" size="15.0" />
+         </font>
+      </Button>
+      <Label fx:id="errorMessageLabelPos" layoutX="152.0" layoutY="490.0" prefHeight="18.0" prefWidth="479.0" textFill="#ef0e0e">
+         <font>
+            <Font name="Palatino Linotype Bold" size="14.0" />
+         </font>
+         <padding>
+            <Insets bottom="20.0" />
+         </padding>
+      </Label>
+   </children>
+</AnchorPane>

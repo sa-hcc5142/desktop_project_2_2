@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="567.0" prefWidth="860.0" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.login.WhatKindOfHelpDoYouNeed">
+   <children>
+      <HBox prefHeight="567.0" prefWidth="873.0">
+         <children>
+            <Pane prefHeight="570.0" prefWidth="877.0" styleClass="interface3-background" stylesheets="@../../../../java/values/style.css">
+               <children>
+                  <ImageView fitHeight="490.0" fitWidth="880.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../../../../images/Picsart_24-10-24_08-38-30-146.jpg" />
+                     </image>
+                  </ImageView>
+                  <Pane layoutX="20.0" layoutY="73.0" prefHeight="73.0" prefWidth="358.0">
+                     <children>
+                        <Label alignment="CENTER" layoutX="14.0" prefHeight="55.0" prefWidth="323.0" text="What Kind Of Help Do You Need?" textFill="#185168">
+                           <font>
+                              <Font name="Palatino Linotype Bold" size="20.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Pane>
+                  <VBox layoutX="36.0" layoutY="151.0" prefHeight="229.0" prefWidth="268.0">
+                     <children>
+                        <Button alignment="CENTER" mnemonicParsing="false" prefHeight="46.0" prefWidth="146.0" styleClass="buttonwhatkind-background" stylesheets="@../../../../java/values/style.css" text="Professional" textFill="WHITE">
+                           <font>
+                              <Font name="Palatino Linotype Bold" size="18.0" />
+                           </font>
+                        </Button>
+                        <RadioButton fx:id="btnPaidHelp" mnemonicParsing="false" prefHeight="39.0" prefWidth="160.0" text="Paid Help" textFill="#185168">
+                           <VBox.margin>
+                              <Insets top="20.0" />
+                           </VBox.margin>
+                           <font>
+                              <Font name="Palatino Linotype Bold" size="15.0" />
+                           </font>
+                        </RadioButton>
+                        <RadioButton fx:id="btnUnpaidHelp" mnemonicParsing="false" prefHeight="32.0" prefWidth="155.0" text="Unpaid Help" textFill="#185168">
+                           <VBox.margin>
+                              <Insets top="10.0" />
+                           </VBox.margin>
+                           <font>
+                              <Font name="Palatino Linotype Bold" size="15.0" />
+                           </font>
+                        </RadioButton>
+                        <Button fx:id="btnPeerGroup" alignment="CENTER" mnemonicParsing="false" prefHeight="44.0" prefWidth="147.0" styleClass="buttonwhatkind-background" stylesheets="@../../../../java/values/style.css" text="Peer Group" textFill="WHITE">
+                           <font>
+                              <Font name="Palatino Linotype Bold" size="18.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets top="20.0" />
+                           </VBox.margin>
+                        </Button>
+                     </children>
+                  </VBox>
+                  <Button fx:id="btnNextInterface" layoutX="659.0" layoutY="494.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="91.0" styleClass="buttonwhatkind-background" stylesheets="@../../../../java/values/style.css" text="Next" textFill="WHITE">
+                     <font>
+                        <Font name="Palatino Linotype Bold" size="18.0" />
+                     </font>
+                  </Button>
+               </children>
+            </Pane>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>
